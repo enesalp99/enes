@@ -20,13 +20,13 @@ class SendSms():
         try:
             wmf = requests.post("https://www.wmf.com.tr/users/register/", data={
                 "confirm": "true",
-                "date_of_birth": "1956-03-01",
+                "date_of_birth": "1996-03-01",
                 "email": self.mail,
                 "email_allowed": "true",
-                "first_name": "Memati",
+                "first_name": "Enes",
                 "gender": "male",
-                "last_name": "Bas",
-                "password": "31ABC..abc31",
+                "last_name": "Yılmaz",
+                "password": "31TTT..abc31",
                 "phone": f"0{self.phone}"
             })
             if wmf.status_code == 202:
